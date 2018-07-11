@@ -2,7 +2,7 @@
 
 %%% This program is used to record the speech sample of subject %%%
 Time = 1;  % Time for one sample recording
-Id = '5';  %Subject id
+Id = '1';  %Subject id
 fs = 8000; %Sampling Frequency
 nBits = 8;  % Number of bits
 SRecoder = audiorecorder(fs, nBits, 1);
@@ -38,6 +38,6 @@ filename = strcat(filename, Word);
 filename = strcat(filename, '_');
 filename = strcat(filename, datestr(now, 30));
 filename = strcat(filename, '.wav');
-filename = strcat('sanjaysir/',filename);
+filename = strcat('foldername/',filename);
 audiowrite(filename, myRecording, fs)  % Save recording sample
 end
